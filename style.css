@@ -1,0 +1,265 @@
+
+body{
+    @font-face {
+        font-family: W95FA;
+        src: ur(W95FA.otf);
+    }
+    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background: #008080;
+}
+
+#container {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    display: grid;
+    user-select: none;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid gray;
+}
+
+button{
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #848484;
+    border-bottom: 1px solid #848484;
+    font-family: W95FA;
+    font-size: 15px;
+    height: 35px;
+    width: 65px;
+    padding: 3px 15px 3px 15px;
+}
+
+button:hover, button:focus {
+    outline: 0;
+}
+
+button:active {
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #848484;
+    border-top: 1px solid #848484;
+}
+
+#center-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#center-others{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin-top: 20px;
+}
+
+#color-picker{
+    height: 35px;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #848484;
+    border-bottom: 1px solid #848484;
+}
+
+#bin{
+    width: 70px;
+    position:absolute;
+    height: 86px;
+    transition: 100ms;
+    margin-left: 5px;
+}
+#bin:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+#odin {
+    width: 70px;
+    height: 80px;
+    position: absolute;
+    transition: 100ms;
+    margin-top: 98px;
+}
+#odin:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+#etch {
+    width: 70px;
+    height: 80px;
+    position: absolute;
+    transition: 100ms;
+    margin-top: 198px;
+}
+
+#etch:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#left{
+align-items: center;
+}
+#center{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#flex-all{
+    display: flex; 
+
+}
+
+#entire-div {
+    transition: height 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    margin-top: 100px;
+}
+
+#entire-div.show {
+    height: auto;
+}
+#window{
+    position: fixed;
+    height: 650px;
+    width: 600px;
+    user-select: none;
+    margin-top: 30px;
+}
+#window-position{
+    user-select: none;
+    display: flex;
+    justify-content: center;
+}
+#close-button{
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    margin-top: 46px;
+    margin-left: 545px;
+    transition: 100ms;
+}
+#close-button:hover{
+    -webkit-filter: brightness(80%);
+}
+#close-button:active {
+    scale: 0.95;
+    -webkit-filter: brightness(60%);
+    transition: 100ms;
+
+}
+
+#maximize-button {
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    margin-top: 46px;
+    margin-left: 480px;
+    transition: 100ms;
+}
+
+#maximize-button:hover {
+    -webkit-filter: brightness(80%);
+}
+
+#maximize-button:active {
+    scale: 0.95;
+    -webkit-filter: brightness(60%);
+    transition: 100ms;
+
+}
+
+#minimize-button {
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    margin-top: 46px;
+    margin-left: 415px;
+    transition: 100ms;
+}
+
+#minimize-button:hover {
+    -webkit-filter: brightness(80%);
+}
+
+#minimize-button:active {
+    scale: 0.95;
+    -webkit-filter: brightness(60%);
+    transition: 100ms;
+
+}
+
+#caption {
+    font-family: W95FA;
+    color: white;
+    text-shadow: 0px 3px 10px;
+    position: absolute;
+    font-size: 18px;
+    margin-top: 46px;
+    margin-left: -370px;
+    user-select: text;
+}
+#etch-logo{
+    height: 25px;
+    width: auto;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: -540px;
+}
+
+#taskbar {
+    display: flex;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    bottom: -3px;
+    background-color: #D4D0C8;
+    border: 3px solid #FFFAF1;
+    left: 0;
+    justify-content: baseline;
+}
+
+#start {
+    margin-left: 2px;
+    margin-top: 2px;
+    width: 80px;
+    height: 35px;
+    transition: 100ms;
+}
+
+#start:hover {
+    transition: 100ms;
+    -webkit-filter: brightness(110%);
+}
+
+#start:active {
+    scale: 0.99;
+    -webkit-filter: brightness(80%);
+    transition: 100ms;
+}
+
+#task-tab{
+    height: 30px;
+    margin-top: 4px;
+    margin-left: 10px;
+    transition: 100ms;
+    box-shadow: gray 1px 1px 1px 1px;
+}
+    
+#task-tab:hover {
+    -webkit-filter: brightness(110%);
+}
+
+#task-tab:active {
+    -webkit-filter: brightness(80%);
+    scale: 0.99;
+    transition: 100ms;
+        box-shadow: gray 1px 2px 1px 1px;
+}
